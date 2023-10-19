@@ -1,0 +1,151 @@
+body
+{
+    background-image: url("christmas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.countdown-container
+{
+    display: flex;
+}
+
+.big-text
+{
+    font-size: 4rem;
+}
+
+.title
+{
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 3rem;
+    line-height: 5.5rem;
+}
+
+.title span
+{
+    font-family: 'Brush Script MT', cursive;
+    display: block;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+}
+
+.wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.countdown-container > div
+{
+    margin: 0 2rem;
+    font-family: 'Brush Script MT', cursive;
+    font-size:xx-large;
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 0px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    color: #fff;
+    min-width: 150px;
+}
+
+@media (max-width:992px)
+{
+    .countdown-container > div 
+    {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width:767px)
+{
+    .countdown-container
+    {
+        flex-wrap: wrap;
+    }
+
+    .countdown-container > div
+    {
+        margin: 1rem auto;
+        max-width: 150px;
+    }
+
+    .title
+    {
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+        margin: 10px 0px;
+    }
+
+    .title span
+    {
+        font-size: 2rem;
+        letter-spacing: 1rem;
+    }
+}
+
+.snow, .snow2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(snow.png);
+    background-position: 0 0;
+}
+
+.snow
+{
+    background-size: 70em;
+    animation: snowfall 30s linear infinite;
+}
+
+.snow2{
+    background-size: 50em;
+    animation: snowfall2 30s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes snowfall
+{
+    100%
+    {
+        background-position: 70em 70em;
+    }
+}
+
+@keyframes snowfall2
+{
+    100%
+    {
+        background-position: 50em 0;
+    }
+}
