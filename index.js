@@ -5,7 +5,7 @@ let secondsItem = document.querySelector("#seconds");
 
 let countDown = () => 
 {
-    let futureDate = new Date("25 Dec 2023");
+    let futureDate = new Date("25 Dec 2024");
     let currentDate = new Date();
     let myDate = futureDate - currentDate;
 
